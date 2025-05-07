@@ -21,10 +21,10 @@ void backtrack(int depth, int N, int M)
     {
         if (!used[i])
         {
-            used[i] = 1;              // 사용 표시
-            sequence[depth] = i;      // 수열에 기록
+            used[i] = 1;                    // 사용 표시
+            sequence[depth] = i;            // 수열에 기록
             backtrack(depth + 1, N, M);     // 다음 단계로
-            used[i] = 0;              // 되돌리기 (backtrack)
+            used[i] = 0;                    // 되돌리기 (backtrack)
         }
     }
 }
